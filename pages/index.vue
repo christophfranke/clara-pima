@@ -27,7 +27,7 @@
       </div>
       <div class="right">
         <h2 class="clara">Clara Haseloff</h2>
-        <p class="description">artist, author, photograph and yoga teacher, living in Berlin.</p>
+        <p class="description">artist, author, photographer and yoga teacher, living in Berlin.</p>
       </div>
     </div>
 
