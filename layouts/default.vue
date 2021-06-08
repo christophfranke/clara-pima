@@ -1,21 +1,6 @@
 <template>
   <div>
-    <div class="social">
-      <a class="link" href="https://www.facebook.com/Pimamip" target="_blank">
-        <svg class="facebook" viewBox="0 30 448 450">
-          <use xlink:href="/facebook.svg#icon" />
-        </svg>
-      </a>
-      <a class="link" href="https://www.instagram.com/daspima/" target="_blank">
-        <img class="instagram hover" src="/instagram.svg">
-        <img class="instagram white" src="/instagram-white.svg">
-      </a>
-      <a class="link" href="mailto:justpima@gmail.com" target="_blank">
-        <svg class="email" viewBox="0 0 512 512">
-          <use xlink:href="/email.svg#icon" />
-        </svg>
-      </a>
-    </div>
+    <Social />
 
     <header class="header">
       <div class="left">
@@ -30,8 +15,22 @@
     </header>
 
     <nuxt/>
+
+    <Footer />
   </div>
 </template>
+
+<script>
+import Social from '~/components/Social'
+import Footer from '~/components/Footer'
+
+export default {
+  components: {
+    Social,
+    Footer,
+  }
+}
+</script>
 
 <style>
 body {
@@ -94,55 +93,6 @@ a, a:visited {
     -webkit-filter: grayscale(1) invert(1);
     filter: grayscale(1) invert(1);
     transform: translate(100%, -50%);
-  }
-}
-
-.social {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .link {
-    margin: 0 4px;
-  }
-
-}
-
-.facebook {
-  height: 32px;
-  color: white;
-  a:hover & {
-    background-color: white;
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(0,0,0,0) 100%);
-    color: #3b5998;
-  }
-}
-
-.instagram {
-  height: 40px;
-  width: auto;
-
-  &.hover {
-    display: none;
-  }
-
-  a:hover & {
-    display: none;
-    &.hover {
-      display: inline-block;
-    }
-  }
-}
-
-.email {
-  height: 36px;
-  padding: 0 5px;
-  margin: 0 -5px;
-  color: white;
-  a:hover & {
-    background-color: white;
-    color: black;
   }
 }
 </style>
