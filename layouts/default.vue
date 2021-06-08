@@ -35,11 +35,18 @@
 
 <style>
 body {
+  background-color: #280038;
+  background-color: #1a0024;
+  background-color: #ff0095;
   background-color: #171717;
   color: white;
 
   font-family: 'Consola', monospace;
   font-weight: normal;
+}
+
+a, a:visited {
+  color: white;
 }
 
 @font-face {

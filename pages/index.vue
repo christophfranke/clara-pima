@@ -1,13 +1,32 @@
 <template>
   <div>
     <div class="main">
+      <img class="picture" src="/53892d_c08330d132e141b4ad5efd1230b2b73e_mv2_d_2000_1333_s_2.webp" />
+      <img class="picture" src="/53892d_9472e389202344cda0745ee27047eea0_mv2.webp" />
       <img class="picture" src="/53892d_efb7351168b34e73a09d86d2ace5a2a1_mv2_d_2000_1333_s_2.webp" />
       <img class="picture" src="/53892d_ca8fffb156274b008d115bb951952bb3_mv2_d_2000_3000_s_2.webp" />
-      <img class="picture" src="/53892d_9472e389202344cda0745ee27047eea0_mv2.webp" />
-      <img class="picture" src="/53892d_c08330d132e141b4ad5efd1230b2b73e_mv2_d_2000_1333_s_2.webp" />
       <img class="picture" src="/53892d_0abdd849aedd48d7bd2c14ebd6f76339_mv2_d_2028_2881_s_2.webp" />
       <img class="picture" src="/53892d_e55df6c845d84b238a829ba4233d1817_mv2.webp" />
       <img class="picture" src="/53892d_b5d347494572417e8b4d6a5e4d2bbc67_mv2_d_2125_2858_s_2.webp" />
+      <img class="picture" src="/bild11.jpg" />
+      <img class="picture" src="/bild7.jpg" />
+      <img class="picture" src="/bild5.jpg" />
+      <img class="picture" src="/bild6.jpg" />
+      <img class="picture" src="/bild2.jpg" />
+      <img class="picture" src="/bild8.jpg" />
+      <img class="picture" src="/bild10.jpg" />
+      <img class="picture" src="/bild12.jpg" />
+
+      <div class="about clara">
+        <div class="left">
+          <img class="profile" src="/_DSF0046.jpg" />
+        </div>
+        <div class="right">
+          <h2 class="title">Clara Haseloff</h2>
+          <p class="description">artist, author, photographer and yoga teacher, living in Berlin.</p>
+        </div>
+      </div>
+
       <div class="book">
         <img class="book-page" src="/53892d_2c490ddb09cc46048c16b27431b54be0_mv2.webp" />
         <div class="book-description">
@@ -21,13 +40,18 @@
       </div>
     </div>
 
-    <div class="about">
+    <div class="about nanny">
       <div class="left">
-        <img class="profile" src="/_DSF0046.jpg" />
+        <h2 class="title">The Nanny's Shmatte</h2>
+        <p class="description">
+          This is our fashion exhibition about the famous 90s show The Nanny:
+          <a href="https://www.thenannysshmatte.com/" target="_blank">
+            https://www.thenannysshmatte.com
+          </a>
+        </p>
       </div>
       <div class="right">
-        <h2 class="clara">Clara Haseloff</h2>
-        <p class="description">artist, author, photographer and yoga teacher, living in Berlin.</p>
+        <img class="profile" src="/bild16.jpg" />
       </div>
     </div>
 
@@ -60,6 +84,7 @@ export default {
 }
 
 .book {
+  margin-top: 500px;
   display: grid;
   grid-gap: 0;
   grid-template-columns: 1fr 1fr 1fr;
@@ -109,17 +134,25 @@ export default {
     width: calc(50% - 8px);
   }
 
-  .right {
+  &.clara .right {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  &.nanny .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .profile {
     width: 100%;
   }
 
-  .clara {
+  .title {
     font-family: 'Consola', monospace;
     font-weight: normal;
     text-align: left;
@@ -133,6 +166,10 @@ export default {
     text-align: left;
     font-size: 24px;
     margin-top: 20px;
+  }
+
+  &.nanny .description {
+    padding: 20px;
   }
 }
 
