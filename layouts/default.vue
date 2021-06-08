@@ -92,7 +92,7 @@ a, a:visited {
     width: 50%;
     -webkit-filter: grayscale(1) invert(1);
     filter: grayscale(1) invert(1);
-    transform: translate(100%, -50%);
+    transform: translate(85%, -60%);
   }
 }
 </style>
