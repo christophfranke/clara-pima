@@ -74,6 +74,10 @@
     &:hover {
       text-decoration: underline;
     }
+
+    @media (hover: none) {
+      text-decoration: underline;
+    }
   }
 }
 </style>

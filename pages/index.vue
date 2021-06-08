@@ -17,7 +17,7 @@
       <img class="picture" src="/bild10.jpg" />
       <img class="picture" src="/bild12.jpg" />
 
-      <div class="about clara">
+      <div class="about clara desktop">
         <div class="left">
           <img class="profile" src="/_DSF0046.jpg" />
         </div>
@@ -25,6 +25,12 @@
           <h2 class="title">Clara Haseloff</h2>
           <p class="description">artist, author, photographer and yoga teacher, living in Berlin.</p>
         </div>
+      </div>
+
+      <div class="about clara mobile">
+        <h2 class="title">Clara Haseloff</h2>
+        <img class="profile" src="/_DSF0046.jpg" />
+        <p class="description">artist, author, photographer and yoga teacher, living in Berlin.</p>
       </div>
 
       <div class="book">
@@ -40,19 +46,30 @@
       </div>
     </div>
 
-    <div class="about nanny">
+    <div class="about nanny desktop">
       <div class="left">
         <h2 class="title">The Nanny's Shmatte</h2>
         <p class="description">
           This is our fashion exhibition about the famous 90s show The Nanny:
           <a href="https://www.thenannysshmatte.com/" target="_blank">
-            https://www.thenannysshmatte.com
+            www.thenannysshmatte.com
           </a>
         </p>
       </div>
       <div class="right">
         <img class="profile" src="/bild16.jpg" />
       </div>
+    </div>
+
+    <div class="about nanny mobile">
+      <h2 class="title">The Nanny's Shmatte</h2>
+      <img class="profile" src="/bild16.jpg" />
+      <p class="description">
+        This is our fashion exhibition about the famous 90s show The Nanny:
+        <a href="https://www.thenannysshmatte.com/" target="_blank">
+          www.thenannysshmatte.com
+        </a>
+      </p>
     </div>
   </div>
 </template>
@@ -112,36 +129,24 @@ export default {
   text-align: center;
   font-size: 40px;
   margin: 0;
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
 }
 .book-subtitle {
   text-align: center;
   font-size: 24px;
   margin-top: 20px;
+
+  @media (max-width: 500px) {
+    margin-top: 10px;
+    font-size: 16px;
+  }
 }
 
 .about {
-  margin-top: 400px;  
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-
-  .left, .right {
-    width: calc(50% - 8px);
-  }
-
-  &.clara .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  &.nanny .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
+  margin-top: 400px;
 
   .profile {
     width: 100%;
@@ -161,10 +166,55 @@ export default {
     text-align: left;
     font-size: 24px;
     margin-top: 20px;
+    overflow-x: auto;
   }
 
-  &.nanny .description {
-    padding: 20px;
+
+  &.mobile {
+    display: none;
+    @media (max-width: 650px) {
+      display: block;
+    }
+
+    .title {
+      font-size: 36px;
+    }
+
+    .description {
+      font-size: 18px;
+    }
   }
+
+  &.desktop {
+    display: flex;
+    @media (max-width: 650px) {
+      display: none;
+    }
+    justify-content: space-between;
+    align-items: stretch;
+
+    .left, .right {
+      width: calc(50% - 8px);
+    }
+
+    &.clara .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &.nanny .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &.nanny .description {
+      padding: 20px;
+    }
+  }
+
 }
 </style>
