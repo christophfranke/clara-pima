@@ -1,13 +1,10 @@
 <template>
   <div>
     <div class="main">
-      <Picture
-        src="/53892d_c08330d132e141b4ad5efd1230b2b73e_mv2_d_2000_1333_s_2.webp"
-        title="Das Alles ist das All, es ist"
-      >
+      <Picture src="/53892d_c08330d132e141b4ad5efd1230b2b73e_mv2_d_2000_1333_s_2.webp" title="Das Alles ist das All, es ist">
         Unawatuna, Sri Lanka
         Carpe Diem Hostel 
-        acrylic paint on 5x3 meter wall
+        acrylic paint on 5 x 3 meter wall
       </Picture>
       <Picture src="/53892d_9472e389202344cda0745ee27047eea0_mv2.webp" title="Das Alles ist das All, es ist">
         Unawatuna, Sri Lanka
