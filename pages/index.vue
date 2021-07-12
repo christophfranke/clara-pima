@@ -1,21 +1,54 @@
 <template>
   <div>
     <div class="main">
-      <img class="picture" src="/53892d_c08330d132e141b4ad5efd1230b2b73e_mv2_d_2000_1333_s_2.webp" />
-      <img class="picture" src="/53892d_9472e389202344cda0745ee27047eea0_mv2.webp" />
-      <img class="picture" src="/53892d_efb7351168b34e73a09d86d2ace5a2a1_mv2_d_2000_1333_s_2.webp" />
-      <img class="picture" src="/53892d_ca8fffb156274b008d115bb951952bb3_mv2_d_2000_3000_s_2.webp" />
-      <img class="picture" src="/53892d_0abdd849aedd48d7bd2c14ebd6f76339_mv2_d_2028_2881_s_2.webp" />
-      <img class="picture" src="/53892d_e55df6c845d84b238a829ba4233d1817_mv2.webp" />
-      <img class="picture" src="/53892d_b5d347494572417e8b4d6a5e4d2bbc67_mv2_d_2125_2858_s_2.webp" />
-      <img class="picture" src="/bild11.jpg" />
-      <img class="picture" src="/bild7.jpg" />
-      <img class="picture" src="/bild5.jpg" />
-      <img class="picture" src="/bild6.jpg" />
-      <img class="picture" src="/bild2.jpg" />
-      <img class="picture" src="/bild8.jpg" />
-      <img class="picture" src="/bild10.jpg" />
-      <img class="picture" src="/bild12.jpg" />
+      <Picture
+        src="/53892d_c08330d132e141b4ad5efd1230b2b73e_mv2_d_2000_1333_s_2.webp"
+        title="Das Alles ist das All, es ist"
+      >
+        Unawatuna, Sri Lanka
+        Carpe Diem Hostel 
+        acrylic paint on 5x3 meter wall
+      </Picture>
+      <Picture src="/53892d_9472e389202344cda0745ee27047eea0_mv2.webp" title="Das Alles ist das All, es ist">
+        Unawatuna, Sri Lanka
+        Carpe Diem Hostel 
+        acrylic paint 5 x 3 meter
+      </Picture>
+      <Picture src="/53892d_efb7351168b34e73a09d86d2ace5a2a1_mv2_d_2000_1333_s_2.webp" title="be aware respect nature">
+        Unawatuna, Sri Lanka
+        Carpe Diem Hostel 
+        acrylic paint 2 x 3 meter
+      </Picture>
+      <Picture src="/53892d_ca8fffb156274b008d115bb951952bb3_mv2_d_2000_3000_s_2.webp" title="be aware respect nature">
+        Unawatuna, Sri Lanka
+        Carpe Diem Hostel 
+        acrylic paint 2 x 3 meter
+      </Picture>
+      <Picture src="/53892d_0abdd849aedd48d7bd2c14ebd6f76339_mv2_d_2028_2881_s_2.webp" title="Kill Wanda">
+        oil pastel on paper 420 x 594 mm
+      </Picture>
+      <Picture src="/53892d_e55df6c845d84b238a829ba4233d1817_mv2.webp" title="ALEXANDRA">
+        acrylic paint on paper 1 x 1,5 meter
+      </Picture>
+      <Picture src="/53892d_b5d347494572417e8b4d6a5e4d2bbc67_mv2_d_2125_2858_s_2.webp" title="FINA">
+        oil pastel on paper 420 x 594 mm
+      </Picture>
+      <Picture src="/bild11.jpg" title="OH ALEX...">
+        acrylic paint on wall 2 x 4 Meter
+      </Picture>
+      <Picture src="/bild7.jpg" title="Dunkelbraunroterraum">
+        oil pastel on paper 420 x 594 mm
+      </Picture>
+      <Picture src="/bild5.jpg" title="one of them">
+        oil pastel on paper 420 x 594 mm
+      </Picture>
+      <Picture src="/bild6.jpg" title="WANDA">
+        pencil drawing on paper 420 x 594 mm
+      </Picture>
+      <img class="old-picture" src="/bild2.jpg" />
+      <img class="old-picture" src="/bild8.jpg" />
+      <img class="old-picture" src="/bild10.jpg" />
+      <img class="old-picture" src="/bild12.jpg" />
 
       <div class="about clara desktop">
         <div class="left">
@@ -75,8 +108,11 @@
 </template>
 
 <script>
+import Picture from '~/components/Picture'
 export default {
-
+  components: {
+    Picture
+  }
 }
 </script>
 
@@ -86,7 +122,7 @@ export default {
   margin-top: -225px;
 }
 
-.picture {
+.old-picture {
   border: 3px solid #fff;
   display: block;
   margin: 300px auto;

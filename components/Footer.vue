@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <nuxt-link to="/impressum">Impressum</nuxt-link>
-    <a href="mailto:mailto:justpima@gmail.com">Kontakt</a>
+    <a href="mailto:justpima@gmail.com">Kontakt</a>
 
     <Social />
   </footer>  
