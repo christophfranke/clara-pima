@@ -1,7 +1,7 @@
 <template>
   <div class="picture">
     <img class="image" :src="src" />
-    <div class="subtext" :class="below">
+    <div class="subtext">
       <span class="title">{{ title }}</span><br />
       <slot />
     </div>
